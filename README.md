@@ -100,36 +100,12 @@ Additional notes:
 ### Open–closed principle
 
 
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
+1. Through an abstract base class:
+    * [BaseReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/BaseReporter.cs)
+        * Allows new reporters to be added by inheriting from this class
+1. Through an interface:
+    * [ICardResolver interface](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Interfaces/ICardResolver.cs)
+        * Allows new data structures to have the simple interest calculated, by supporting this interface.
 
 
 ### Liskov substitution principle
