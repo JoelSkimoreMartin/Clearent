@@ -4,9 +4,9 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ## Solution projects
 
-1. [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models)
+1. [Clearent](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent)
     * Library containing the main business logic
-1. [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent)
+1. [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models)
     * Library of POCO classes
 1. [Clearent.Repo](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Repo)
     * Library of data repository
