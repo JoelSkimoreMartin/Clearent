@@ -46,18 +46,14 @@ Completed:
     * Only responsible for registering dependency injected classes for a library
         * [Clearent/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs)
         * [Clearent.Repo/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
-1. []()
-    * Only responsible for 
-1. []()
-    * Only responsible for 
-1. []()
-    * Only responsible for 
-1. []()
-    * Only responsible for 
-1. []()
-    * Only responsible for 
-1. []()
-    * Only responsible for 
+1. [SimpleInterestCalculator class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
+    * Only responsible for calculating simple interest for credit cards
+1. [JsonReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/JsonReporter.cs)
+    * Only responsible for reporting calculated results in a json format
+1. [StringReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/StringReporter.cs)
+    * Only responsible for reporting calculated results in a sentance-based string format
+1. [XmlReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/XmlReporter.cs)
+    * Only responsible for reporting calculated results in an xml format
 
 
 ### Open–closed principle
