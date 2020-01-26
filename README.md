@@ -2,7 +2,20 @@
 
 Visual Studio 2019 .NET Core 3.1 Solution
 
-Requirements:
+## Solution projects
+
+1. [Clearent](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent)
+    * Library containing the main business logic
+1. [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models)
+    * Library of POCO classes
+1. [Clearent.Repo](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Repo)
+    * Library of data repository
+1. [Clearent.Test](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Test)
+    * Nunit test cases
+1. [Clearent.WebApi](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.WebApi)
+   * Web api
+
+## Requirements
 > ### Now write a program program that calculates Credit Card interest for a Person.  
 >  
 > Visa gets 10%
@@ -46,21 +59,8 @@ Additional notes:
       * Repository layer
       * Web API
       * Reporter classes to format execution results
-   * Only created unit tests for the requirement functionality and not for these additional peices of code
+   * Only created unit tests for the requirement functionality and not for these additional pieces of code
 
-
-## Solution projects
-
-1. [Clearent](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent)
-    * Library containing the main business logic
-1. [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models)
-    * Library of POCO classes
-1. [Clearent.Repo](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Repo)
-    * Library of data repository
-1. [Clearent.Test](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Test)
-    * Nunit test cases
-1. [Clearent.WebApi](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.WebApi)
-   * Web api
 
 ## SOLID principles in code
 
