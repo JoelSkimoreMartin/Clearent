@@ -48,7 +48,7 @@ Visual Studio 2019 .NET Core 3.1 Solution
 > 
 > http://en.wikipedia.org/wiki/SOLID_(object-oriented_design) 
 > 
-> You must post your example on https://github.com/Your name here
+> You must post your example on https://github.com/<< Your name here >>
 
 
 Completed:
