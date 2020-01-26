@@ -26,8 +26,11 @@ Completed:
 
 ### Single responsibility principle
 
-1. POCO classes ([Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models))
+1. POCO classes
     * Only responsible for storing data in the shape of Person -> Wallet -> CreditCard
+        * [Clearent.Models/CreditCard.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/CreditCard.cs)
+        * [Clearent.Models/Person.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Person.cs)
+        * [Clearent.Models/Wallet.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
 1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/TestDataFactory.cs)
     * Only responsible for building test data that can be used in both the test cases and web api
 1. Group classes / enum ([Clearent.Models/Tools](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models/Tools))
