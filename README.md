@@ -36,8 +36,8 @@ Completed:
     * Only responsible for retrieving data from a json data source
 1. [CardRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
     * Only responsible for retrieving credit card info from the datasource
-1. []()
-    * Only responsible for 
+1. DependencyInjectionExtensions classes ([Clearent/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs) and [Clearent.Repo/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs))
+    * Only responsible for registering dependency injected classes for a library
 1. []()
     * Only responsible for 
 1. []()
