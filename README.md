@@ -17,6 +17,7 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ## SOLID principles in code
 
+
 ### Single responsibility principle
 
 1. 
@@ -36,8 +37,10 @@ Visual Studio 2019 .NET Core 3.1 Solution
 1. 
     * []()
 
+
 ### Open–closed principle
 
+
 1. 
     * []()
 1. 
@@ -55,7 +58,9 @@ Visual Studio 2019 .NET Core 3.1 Solution
 1. 
     * []()
 
+
 ### Liskov substitution principle
+
 
 1. Reporter classes
     * [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
@@ -73,38 +78,11 @@ Visual Studio 2019 .NET Core 3.1 Solution
         * Resolves to the current credit card
     * [Clearent/SimpleInterestCalculator.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
         * Use of ICardResolver shows how the different POCO classes can be evaluated interchangeably in order to calculate the simple interest rate, depending on the scope supplied
-1. 
-    * []()
-        *
-1. 
-    * []()
-        *
-1. 
-    * []()
-        *
-1. 
-    * []()
-        *
-1. 
-    * []()
-        *
-1. 
-    * []()
-        *
-    
-    
-    * Can swap the reporters and they will work interchangeably
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
+
 
 ### Interface segregation principle
 
+
 1. 
     * []()
         *
@@ -129,13 +107,15 @@ Visual Studio 2019 .NET Core 3.1 Solution
     * []()
         *
 
+
 ### Dependency inversion principle
+
 
 1. Initialze dependency injection
     *  [Clearent.WebApi/Startup.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Startup.cs)
     *  [Clearent/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs)
     *  [Clearent.Repo/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
-1. Dependency injection in practice
+1. Constructor dependency injection in practice
     * [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
     *  [Clearent/SimpleInterestCalculator.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
     *  [Clearent/Reporters/JsonReporter.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/JsonReporter.cs)
