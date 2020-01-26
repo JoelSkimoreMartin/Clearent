@@ -6,7 +6,7 @@ Completed:
 
 - [x] Met requirements
 - [ ] Prove functionality validity through unit tests
-- [] Illustrated SOLID principles
+- [ ] Illustrated SOLID principles
 
 ## Solution projects
 
