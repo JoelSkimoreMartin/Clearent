@@ -8,9 +8,9 @@ namespace Clearent.WebApi.Controllers
     [Route("api/[controller]")]
     public class TestController : ControllerBase
     {
-		private IStringReporter Reporter { get; }
+		private IStringReporter /* IJsonReporter *//* IXmlReporter */ Reporter { get; }
 
-		public TestController(IStringReporter reporter)
+		public TestController(IStringReporter /* IJsonReporter *//* IXmlReporter */ reporter)
 		{
 			Reporter = reporter;
 		}
