@@ -61,7 +61,7 @@ Additional notes:
       * Web API
       * Reporter classes to format execution results
    * Only created unit tests for the requirement functionality and not for these additional pieces of code
-   * The code is light on comments because I'm relying on this document to tie the requirements to the output.  I figured it was better than a hide-and-go-seek of what is where.
+   * The code is light on comments because I'm relying on this document to frame the code for the requirements.  I wanted to avoid a game of hide-and-go-seek of what is where.
 
 
 ## SOLID principles in code
