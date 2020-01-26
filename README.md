@@ -56,7 +56,7 @@ Completed:
 
 
 Additional notes:
-   * Added the following to betterillustrate the SOLID principles
+   * Added the following in order to better illustrate the SOLID principles
       * Repository layer
       * Web API
       * Reporter classes to format execution results
