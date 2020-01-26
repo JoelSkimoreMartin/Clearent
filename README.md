@@ -3,7 +3,7 @@
 Visual Studio 2019 .NET Core 3.1 Solution
 
 Requirements:
-> Now write a program program that calculates Credit Card interest for a Person.  
+> ### Now write a program program that calculates Credit Card interest for a Person.  
 >  
 > Visa gets 10%
 > MC gets 5% interest
@@ -35,6 +35,14 @@ Completed:
 - [x] Met requirements
 - [ ] Prove functionality validity through unit tests
 - [ ] Illustrated SOLID principles
+
+Additional notes:
+   * Added the following to betterillustrate the SOLID principles
+      * Repository layer
+      * Web API
+      * Reporter classes to format execution results
+   * Only created unit tests for the requirement functionality and not for these additional peices of code
+
 
 ## Solution projects
 
