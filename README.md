@@ -46,15 +46,6 @@ Visual Studio 2019 .NET Core 3.1 Solution
 > *	1 person has 2 wallets  Wallet 1 has a Visa and Discover , wallet 2 a MC -  each card has $100 balance - calculate the total interest(simple interest) for this person and interest per wallet
 > *	2 people have **1 wallet each**,  person **1 has 1 wallet** , with 2 cards MC and visa **person 2 has 1 wallet** – 1 visa and 1 MC -  each card has $100 balance - calculate the total interest(simple interest) for each person and interest per wallet
 > 
-> Please be prepared to discuss your solution on the basis of SOLID programming principles-
-> 
-> http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf 
-> 
-> http://www.blackwasp.co.uk/SOLIDPrinciples.aspx 
-> 
-> http://en.wikipedia.org/wiki/SOLID_(object-oriented_design) 
-> 
-> You must post your example on https://github.com/< Your name here >
 
 
 Completed:
@@ -62,6 +53,7 @@ Completed:
 - [x] Met requirements
 - [ ] Prove functionality validity through unit tests
 - [x] Illustrated SOLID principles
+
 
 Additional notes:
    * Added the following to betterillustrate the SOLID principles
