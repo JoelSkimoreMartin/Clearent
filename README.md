@@ -1,4 +1,4 @@
-# Clearent SOLID Examples
+# Clearent SOLID Exercise
 
 
 ## Solution
