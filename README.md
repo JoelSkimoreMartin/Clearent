@@ -19,6 +19,12 @@ Visual Studio 2019 .NET Core 3.1 Solution
    * Web api
 
 ## Requirements
+> Here is the Clearent code challenge. You don’t need to write a user interface, just create unit tests using your favorite testing framework (xUnit, JUnit, NUnit, etc.). The tests running is all that is needed to “prove” the example. While this solution can be solved very simply, your ability to use and explain your use of SOLID programming principles is the real test.
+> 
+> There are two requirements to be considered:
+> * You MUST use a testing framework (xUnit, JUnit, NUnit, etc.)
+> * Please post your answer on http://github.com 
+> 
 > ### Write a program program that calculates Credit Card interest for a Person.  
 >  
 > Visa gets 10%
