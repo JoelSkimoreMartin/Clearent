@@ -71,14 +71,14 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ### Dependency inversion principle
 
-1. [Clearent.WebApi/Startup.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Startup.cs)
-    * Initialze dependency injection for the Web Api project
-1. [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
-    * Dependency injection in practice
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-
+1. Initialze dependency injection
+    *  [Clearent.WebApi/Startup.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Startup.cs)
+    *  [Clearent/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs)
+    *  [Clearent.Repo/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
+1. Dependency injection in practice
+    * [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
+    *  []()
+    *  []()
+    *  []()
+    *  []()
+    *  []()
