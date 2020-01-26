@@ -6,7 +6,7 @@ Completed:
 
 - [x] Met requirements
 - [ ] Prove functionality validity through unit tests
-- [x] Illustrated SOLID principles
+- [] Illustrated SOLID principles
 
 ## Solution projects
 
@@ -34,37 +34,28 @@ Completed:
     * Groups results from ICardResolver for use by the reporter
 1. [JsonRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
     * Only responsible for retrieving data from a json data source
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
+1. [CardRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
+    * Only responsible for retrieving credit card info from the datasource
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
+1. []()
+    * Only responsible for 
 
 
 ### Open–closed principle
 
 
-1. POCO classes
+1. 
     * []()
         *
     * []()
@@ -167,4 +158,3 @@ Completed:
     *  [Clearent/Reporters/StringReporter.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/StringReporter.cs)
     *  [Clearent/Reporters/XmlReporter.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/XmlReporter.cs)
     *  [Clearent.Repo/CardRepo.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
-    *  [Clearent.Repo/JsonRepo.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
