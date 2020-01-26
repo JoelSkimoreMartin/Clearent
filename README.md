@@ -19,7 +19,7 @@ Visual Studio 2019 .NET Core 3.1 Solution
    * Web api
 
 ## Requirements
-> ### Now write a program program that calculates Credit Card interest for a Person.  
+> ### Write a program program that calculates Credit Card interest for a Person.  
 >  
 > Visa gets 10%
 >  
