@@ -2,6 +2,12 @@
 
 Visual Studio 2019 .NET Core 3.1 Solution
 
+Completed:
+
+- [x] Met requirements
+- [ ] Prove functionality validity through unit tests
+- [x] Illustrated SOLID principles
+
 ## Solution projects
 
 1. [Clearent](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent)
@@ -20,43 +26,78 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ### Single responsibility principle
 
+1. POCO classes
+    * [Clearent.Models](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models)
+        * Only responsible for storing data in the shape of Person -> Wallet -> CreditCard
+1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/TestDataFactory.cs)
+    * Only responsible for building test data that can be used in both the test cases and web api
+1. Group classes / enum ([Clearent.Models/Tools](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models/Tools))
+    * Groups results from ICardResolver for use by the reporter
+1. [JsonRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
+    * Only responsible for retrieving data from a 
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
-1. 
+        *
     * []()
-1. 
-    * []()
-1. 
-    * []()
+        *
 
 
 ### Open–closed principle
 
 
+1. POCO classes
+    * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
+        *
+    * []()
+        *
 1. 
     * []()
-1. 
+        *
     * []()
-1. 
-    * []()
-1. 
-    * []()
+        *
 
 
 ### Liskov substitution principle
@@ -91,21 +132,29 @@ Visual Studio 2019 .NET Core 3.1 Solution
 1. 
     * []()
         *
-1. 
     * []()
         *
 1. 
     * []()
         *
-1. 
     * []()
         *
 1. 
     * []()
         *
+    * []()
+        *
 1. 
     * []()
         *
+    * []()
+        *
+1. 
+    * []()
+        *
+    * []()
+        *
+
 
 
 ### Dependency inversion principle
