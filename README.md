@@ -33,8 +33,11 @@ Completed:
         * [Clearent.Models/Wallet.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
 1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/TestDataFactory.cs)
     * Only responsible for building test data that can be used in both the test cases and web api
-1. Group classes / enum ([Clearent.Models/Tools](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models/Tools))
+1. Group classes / enum
     * Only responsible for grouping results from ICardResolver for use by the reporter
+        * [Clearent.Models/Tools/Group.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Group.cs)
+        * [Clearent.Models/Tools/Grouper.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Grouper.cs)
+        * [Clearent.Models/Tools/Grouping.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Grouping.cs)
 1. [JsonRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
     * Only responsible for retrieving data from a json data source
 1. [CardRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
