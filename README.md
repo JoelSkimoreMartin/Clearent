@@ -19,33 +19,78 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ### Single responsibility principle
 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
 
 ### Open–closed principle
 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
+1. 
+    * []()
 
 ### Liskov substitution principle
 
-1. [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
+1. Reporter classes
+    * [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
+        * Commented code shows how reporters can be swapppedinterchangeably
+    * []()
+        *
+    * []()
+        *
+    * []()
+        *
+1. 
+    * []()
+        *
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+    
+    
     * Can swap the reporters and they will work interchangeably
 1. []()
     * 
@@ -58,16 +103,29 @@ Visual Studio 2019 .NET Core 3.1 Solution
 
 ### Interface segregation principle
 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
-1. []()
-    * 
+1. 
+    * []()
+        *
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
+1. 
+    * []()
+        *
 
 ### Dependency inversion principle
 
