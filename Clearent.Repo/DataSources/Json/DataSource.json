@@ -1,0 +1,7 @@
+{
+	"InterestRates": {
+		"Visa": 0.1,
+		"MasterCard": 0.05,
+		"Discover": 0.01
+	}
+}
