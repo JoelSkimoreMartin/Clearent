@@ -34,7 +34,7 @@ Completed:
 1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/TestDataFactory.cs)
     * Only responsible for building test data that can be used in both the test cases and web api
 1. Group classes / enum ([Clearent.Models/Tools](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent.Models/Tools))
-    * Groups results from ICardResolver for use by the reporter
+    * Only responsible for grouping results from ICardResolver for use by the reporter
 1. [JsonRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
     * Only responsible for retrieving data from a json data source
 1. [CardRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
