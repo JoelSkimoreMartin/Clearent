@@ -55,7 +55,7 @@ Completed:
 
 - [x] Met requirements
 - [ ] Prove functionality validity through unit tests
-- [ ] Illustrated SOLID principles
+- [x] Illustrated SOLID principles
 
 Additional notes:
    * Added the following to betterillustrate the SOLID principles
@@ -136,37 +136,12 @@ Additional notes:
 ### Interface segregation principle
 
 
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-1. 
-    * []()
-        *
-    * []()
-        *
-
+1. Following interfaces are light weight
+    * [ICardResolver](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Interfaces/ICardResolver.cs)
+    * [ICardRepo](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Interfaces/ICardRepo.cs)
+    * [IJsonRepo](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Interfaces/IJsonRepo.cs)
+    * [IReporter](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Interfaces/IReporter.cs)
+    * [ISimpleInterestCalculator](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Interfaces/ISimpleInterestCalculator.cs)
 
 
 ### Dependency inversion principle
