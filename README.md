@@ -19,6 +19,12 @@ Visual Studio 2019 .NET Core 3.1 Solution
    * Web api
 
 ## Requirements
+> Here is the Clearent code challenge. You don’t need to write a user interface, just create unit tests using your favorite testing framework (xUnit, JUnit, NUnit, etc.). The tests running is all that is needed to “prove” the example. While this solution can be solved very simply, your ability to use and explain your use of SOLID programming principles is the real test.
+> 
+> There are two requirements to be considered:
+> * You MUST use a testing framework (xUnit, JUnit, NUnit, etc.)
+> * Please post your answer on http://github.com 
+> 
 > ### Write a program program that calculates Credit Card interest for a Person.  
 >  
 > Visa gets 10%
@@ -40,15 +46,6 @@ Visual Studio 2019 .NET Core 3.1 Solution
 > *	1 person has 2 wallets  Wallet 1 has a Visa and Discover , wallet 2 a MC -  each card has $100 balance - calculate the total interest(simple interest) for this person and interest per wallet
 > *	2 people have **1 wallet each**,  person **1 has 1 wallet** , with 2 cards MC and visa **person 2 has 1 wallet** – 1 visa and 1 MC -  each card has $100 balance - calculate the total interest(simple interest) for each person and interest per wallet
 > 
-> Please be prepared to discuss your solution on the basis of SOLID programming principles-
-> 
-> http://www.objectmentor.com/resources/articles/Principles_and_Patterns.pdf 
-> 
-> http://www.blackwasp.co.uk/SOLIDPrinciples.aspx 
-> 
-> http://en.wikipedia.org/wiki/SOLID_(object-oriented_design) 
-> 
-> You must post your example on https://github.com/< Your name here >
 
 
 Completed:
@@ -57,13 +54,14 @@ Completed:
 - [ ] Prove functionality validity through unit tests
 - [x] Illustrated SOLID principles
 
+
 Additional notes:
-   * Added the following to betterillustrate the SOLID principles
+   * Added the following in order to better illustrate the SOLID principles
       * Repository layer
       * Web API
       * Reporter classes to format execution results
    * Only created unit tests for the requirement functionality and not for these additional pieces of code
-   * The code is light on comments because I'm relying on this document to tie the requirements to the output.  I figured it was better than a hide-and-go-seek of what is where.
+   * The code is light on comments because I'm relying on this document to frame the code for the requirements.  I wanted to avoid a game of hide-and-go-seek of what is where.
 
 
 ## SOLID principles in code
