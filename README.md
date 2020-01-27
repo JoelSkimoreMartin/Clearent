@@ -154,6 +154,7 @@ Additional notes:
     * [DependencyInjectionExtensions class (Clearent.Repo library)](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
 1. Constructor dependency injection in practice
     * [TestController class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
+    * [GroupCalculator class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/GroupCalculator.cs)
     * [SimpleInterestCalculator class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
     * [JsonReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/JsonReporter.cs)
     * [StringReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/StringReporter.cs)
