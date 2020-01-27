@@ -1,7 +1,5 @@
-﻿using Clearent.Interfaces;
-using Clearent.Models;
-using Clearent.Models.Interfaces;
-using Clearent.Models.Tools;
+﻿using Clearent.Groupers;
+using Clearent.Interfaces;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -11,14 +9,13 @@ namespace Clearent.Reporters
 {
 	public class JsonReporter : BaseReporter<string>, IJsonReporter
 	{
-		public JsonReporter(Grouper grouper, ISimpleInterestCalculator simpleInterestCalculator)
-			: base(grouper, simpleInterestCalculator) { }
+		public JsonReporter(IGroupCalculator groupCalculator)
+			: base(groupCalculator) { }
 
-		protected override string BuildReport(List<(Person person, decimal personInterest, List<(ICardResolver resolver, decimal resolverInterest)> items)> calculations)
+		protected override string BuildReport(IEnumerable<GroupCalculation> calculations)
 		{
 			var sb = new StringBuilder();
-			var sw = new StringWriter(sb);
-
+			using var sw = new StringWriter(sb);
 			using var writer = new JsonTextWriter(sw) {Formatting = Formatting.Indented};
 
 			writer.WriteStartObject();
@@ -27,16 +24,16 @@ namespace Clearent.Reporters
 
 			writer.WriteStartArray();
 
-			foreach (var (person, personInterest, items) in calculations)
+			foreach (var calculation in calculations)
 			{
 				writer.WriteStartObject();
 
-				writer.WriteProperty("Name", person.Name);
-				writer.WriteProperty("SimpleInterest", $"{personInterest:C}");
+				writer.WriteProperty("Name", calculation.Person.Name);
+				writer.WriteProperty("SimpleInterest", $"{calculation.PersonInterest:C}");
 
 				var itemsCreated = false;
 
-				foreach (var (resolver, resolverInterest) in items)
+				foreach (var (resolver, resolverInterest) in calculation.Resolvers)
 				{
 					if (itemsCreated == false)
 					{

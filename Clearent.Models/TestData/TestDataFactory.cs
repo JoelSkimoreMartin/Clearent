@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Clearent.Models.Tools
+namespace Clearent.Models.TestData
 {
 	public static class TestDataFactory
 	{
@@ -68,11 +68,13 @@ namespace Clearent.Models.Tools
 					return
 						new List<Person>
 						{
+							// 1 person has 2 wallets
 							new Person
 							{
 								Wallets =
 									new List<Wallet>
 									{
+										// Wallet 1 has a Visa and Discover
 										new Wallet
 										{
 											Cards =
@@ -82,6 +84,7 @@ namespace Clearent.Models.Tools
 													CreditCardType.Discover,
 												}
 										},
+										// Wallet 2 a MC
 										new Wallet
 										{
 											Id = 2,
@@ -105,6 +108,7 @@ namespace Clearent.Models.Tools
 					return
 						new List<Person>
 						{
+							// Person 1 has 1 wallet , with 2 cards MC and visa
 							new Person
 							{
 								Wallets =
@@ -121,6 +125,7 @@ namespace Clearent.Models.Tools
 										},
 									},
 							},
+							// Person 2 has 1 wallet – 1 visa and 1 MC
 							new Person
 							{
 								Id = 2,
@@ -129,6 +134,7 @@ namespace Clearent.Models.Tools
 									{
 										new Wallet
 										{
+											Id = 2,
 											Cards =
 												new List<CreditCard>
 												{

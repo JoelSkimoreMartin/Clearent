@@ -1,7 +1,5 @@
-﻿using Clearent.Interfaces;
-using Clearent.Models;
-using Clearent.Models.Interfaces;
-using Clearent.Models.Tools;
+﻿using Clearent.Groupers;
+using Clearent.Interfaces;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,18 +7,18 @@ namespace Clearent.Reporters
 {
 	public class StringReporter : BaseReporter<string>, IStringReporter
 	{
-		public StringReporter(Grouper grouper, ISimpleInterestCalculator simpleInterestCalculator)
-			: base(grouper, simpleInterestCalculator) { }
+		public StringReporter(IGroupCalculator groupCalculator)
+			: base(groupCalculator) { }
 
-		protected override string BuildReport(List<(Person person, decimal personInterest, List<(ICardResolver resolver, decimal resolverInterest)> items)> calculations)
+		protected override string BuildReport(IEnumerable<GroupCalculation> calculations)
 		{
 			var sb = new StringBuilder();
 
-			foreach (var (person, personInterest, items) in calculations)
+			foreach (var calculation in calculations)
 			{
-				sb.AppendLine($"{person} has a simple interest rate of {personInterest:C}");
+				sb.AppendLine($"{calculation.Person} has a simple interest rate of {calculation.PersonInterest:C}");
 
-				foreach (var (resolver, resolverInterest) in items)
+				foreach (var (resolver, resolverInterest) in calculation.Resolvers)
 				{
 					sb.AppendLine($"{resolver} has a simple interest rate of {resolverInterest:C}");
 				}

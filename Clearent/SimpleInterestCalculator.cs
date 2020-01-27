@@ -28,8 +28,13 @@ namespace Clearent
 		/// <exception cref="System.ArgumentException">Thrown when a credit card type supplied and a matching interest rate does not exist</exception>
 		public decimal Calculate(params ICardResolver[] resolvers)
 		{
+			// verify card repo
+			if (CardRepo == null)
+				throw new NullReferenceException("CardRepo is null");
+
 			// verify parameters
-			if (resolvers == null)
+			if (resolvers == null ||
+			    resolvers.Any(r => r == null))
 				throw new ArgumentNullException(nameof(resolvers));
 
 			var cards = resolvers.SelectMany(r => r.Cards).ToList();
@@ -44,7 +49,7 @@ namespace Clearent
 			// verify interest rates exist
 			var missingInterestRates = cards.Select(c => c.Type).Distinct().Where(t => interestRates.ContainsKey(t) == false).Select(t => $"{t}").ToList();
 			if (missingInterestRates.Any())
-				throw new ArgumentException($"Interest rates do not exist for: {string.Join(",", missingInterestRates)}");
+				throw new ArgumentException($"Interest rate(s) do not exist for: {string.Join(",", missingInterestRates)}");
 
 			// Calculate simple interest
 			return cards.Sum(c => c.Balance * interestRates[c.Type]);

@@ -1,7 +1,5 @@
-﻿using Clearent.Interfaces;
-using Clearent.Models;
-using Clearent.Models.Interfaces;
-using Clearent.Models.Tools;
+﻿using Clearent.Groupers;
+using Clearent.Interfaces;
 using System.Collections.Generic;
 using System.Xml;
 
@@ -9,24 +7,24 @@ namespace Clearent.Reporters
 {
 	public class XmlReporter : BaseReporter<string>, IXmlReporter
 	{
-		public XmlReporter(Grouper grouper, ISimpleInterestCalculator simpleInterestCalculator)
-			: base(grouper, simpleInterestCalculator) { }
+		public XmlReporter(IGroupCalculator groupCalculator)
+			: base(groupCalculator) { }
 
-		protected override string BuildReport(List<(Person person, decimal personInterest, List<(ICardResolver resolver, decimal resolverInterest)> items)> calculations)
+		protected override string BuildReport(IEnumerable<GroupCalculation> calculations)
 		{
 			var doc = new XmlDocument();
 			doc.LoadXml("<credit-card-interest />");
 
-			foreach (var (person, personInterest, items) in calculations)
+			foreach (var calculation in calculations)
 			{
 				var personNode = doc.DocumentElement.AppendChild("person");
 
-				personNode.AppendChild("name", person.Name);
-				personNode.AppendChild("simple-interest", $"{personInterest:C}");
+				personNode.AppendChild("name", calculation.Person.Name);
+				personNode.AppendChild("simple-interest", $"{calculation.PersonInterest:C}");
 
 				XmlElement itemsNode = null;
 
-				foreach (var (resolver, resolverInterest) in items)
+				foreach (var (resolver, resolverInterest) in calculation.Resolvers)
 				{
 					if (itemsNode == null)
 						itemsNode = personNode.AppendChild(resolver.GetType().Name.ToLower() + "s");

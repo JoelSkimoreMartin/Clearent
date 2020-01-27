@@ -1,4 +1,4 @@
-﻿namespace Clearent.Models.Tools
+﻿namespace Clearent.Models.TestData
 {
 	public enum Grouping
 	{

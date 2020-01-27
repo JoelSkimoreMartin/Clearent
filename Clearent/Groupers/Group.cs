@@ -1,7 +1,9 @@
-﻿using Clearent.Models.Interfaces;
+﻿using Clearent.Models;
+using Clearent.Models.Interfaces;
+using Clearent.Models.TestData;
 using System.Collections.Generic;
 
-namespace Clearent.Models.Tools
+namespace Clearent.Groupers
 {
 	public class Group
 	{

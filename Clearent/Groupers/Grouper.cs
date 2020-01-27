@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using Clearent.Models;
+using Clearent.Models.TestData;
+using System.Collections.Generic;
 using System.Linq;
 
-namespace Clearent.Models.Tools
+namespace Clearent.Groupers
 {
 	public class Grouper
 	{

@@ -1,5 +1,5 @@
-﻿using Clearent.Interfaces;
-using Clearent.Models.Tools;
+﻿using Clearent.Groupers;
+using Clearent.Interfaces;
 using Clearent.Repo;
 using Clearent.Reporters;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +17,7 @@ namespace Clearent
 
 			services.AddClearentTestRepo();
 			services.AddSingleton<Grouper>();
+			services.AddSingleton<IGroupCalculator, GroupCalculator>();
 			services.AddSingleton<ISimpleInterestCalculator, SimpleInterestCalculator>();
 			services.AddSingleton<IStringReporter, StringReporter>();
 			services.AddSingleton<IJsonReporter, JsonReporter>();
