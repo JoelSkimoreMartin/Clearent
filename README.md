@@ -61,7 +61,7 @@ Additional notes:
       * Web API
       * Reporter classes to format execution results
    * Only created unit tests for the requirement functionality and not for these additional pieces of code
-   * The code is light on comments because I'm relying on this document to frame the code for the requirements.
+   * The code is light on comments because I'm relying on this document to square the code to the requirements.
       * Want to avoid a game of hide-and-go-seek to find what is where.
 
 
@@ -72,10 +72,10 @@ Additional notes:
 
 1. POCO classes
     * Only responsible for storing data in the shape of Person -> Wallet -> CreditCard
-        * [Clearent.Models/CreditCard.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/CreditCard.cs)
-        * [Clearent.Models/Person.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Person.cs)
-        * [Clearent.Models/Wallet.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
-1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/TestDataFactory.cs)
+        * [CreditCard class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/CreditCard.cs)
+        * [Person class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Person.cs)
+        * [Wallet class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
+1. [TestDataFactory class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/TestData/TestDataFactory.cs)
     * Only responsible for building test data that can be used in both the test cases and web api
 1. Group classes / enum
     * Only responsible for grouping results from ICardResolver for use by the reporter
