@@ -51,7 +51,7 @@ Visual Studio 2019 .NET Core 3.1 Solution
 Completed:
 
 - [x] Met requirements
-- [ ] Prove functionality validity through unit tests
+- [x] Prove functionality validity through unit tests
 - [x] Illustrated SOLID principles
 
 
@@ -61,7 +61,8 @@ Additional notes:
       * Web API
       * Reporter classes to format execution results
    * Only created unit tests for the requirement functionality and not for these additional pieces of code
-   * The code is light on comments because I'm relying on this document to frame the code for the requirements.  I wanted to avoid a game of hide-and-go-seek of what is where.
+   * The code is light on comments because I'm relying on this document to frame the code for the requirements.
+      * Want to avoid a game of hide-and-go-seek to find what is where.
 
 
 ## SOLID principles in code
@@ -78,9 +79,10 @@ Additional notes:
     * Only responsible for building test data that can be used in both the test cases and web api
 1. Group classes / enum
     * Only responsible for grouping results from ICardResolver for use by the reporter
-        * [Clearent.Models/Tools/Group.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Group.cs)
-        * [Clearent.Models/Tools/Grouper.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Grouper.cs)
-        * [Clearent.Models/Tools/Grouping.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Tools/Grouping.cs)
+        * [Group class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Groupers/Group.cs)
+        * [GroupCalculation class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Groupers/GroupCalculation.cs)
+        * [Grouper class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Groupers/Grouper.cs)
+        * [Grouping enum](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/TestData/Grouping.cs)
 1. [JsonRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/JsonRepo.cs)
     * Only responsible for retrieving data from a json data source
 1. [CardRepo class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/CardRepo.cs)
