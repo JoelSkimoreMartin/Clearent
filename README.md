@@ -89,8 +89,8 @@ Additional notes:
     * Only responsible for retrieving credit card info from the datasource
 1. DependencyInjectionExtensions classes
     * Only responsible for registering dependency injected classes for a library
-        * [Clearent/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs)
-        * [Clearent.Repo/Extensions/DependencyInjectionExtensions.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
+        * [DependencyInjectionExtensions class (Clearent library)](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Extensions/DependencyInjectionExtensions.cs)
+        * [DependencyInjectionExtensions class (Clearent.Repo library)](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Extensions/DependencyInjectionExtensions.cs)
 1. [SimpleInterestCalculator class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
     * Only responsible for calculating simple interest for credit cards
 1. [JsonReporter class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Reporters/JsonReporter.cs)
@@ -139,6 +139,7 @@ Additional notes:
 1. Following interfaces are light weight
     * [ICardResolver](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Interfaces/ICardResolver.cs)
     * [ICardRepo](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Interfaces/ICardRepo.cs)
+    * [IGroupCalculator](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Interfaces/IGroupCalculator.cs)
     * [IJsonRepo](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Repo/Interfaces/IJsonRepo.cs)
     * [IReporter](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Interfaces/IReporter.cs)
     * [ISimpleInterestCalculator](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/Interfaces/ISimpleInterestCalculator.cs)
