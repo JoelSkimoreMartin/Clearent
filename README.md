@@ -116,20 +116,20 @@ Additional notes:
 
 
 1. Reporter classes
-    * [Clearent.WebApi/Controllers/TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
+    * [TestController.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.WebApi/Controllers/TestController.cs)
         * Commented code shows how reporters can be swappped, interchangeably
     * [Clearent/Reporters](https://github.com/JoelSkimoreMartin/Clearent/tree/master/Clearent/Reporters)
         * Implementation of clases that can be interchangeably used
 1. ICardResolver interface being supported on POCO objects to retrieve credit cards
-    * [Clearent.Models/Interfaces/ICardResolver.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Interfaces/ICardResolver.cs)
+    * [ICardResolver interface](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Interfaces/ICardResolver.cs)
         * Defines resolver interface
-    * [Clearent.Models/Person.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Person.cs)
+    * [Person class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Person.cs)
         * Resolves to all credit cards for a person
-    * [Clearent.Models/Wallet.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
+    * [Wallet class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/Wallet.cs)
         * Resolves to all credit cards in a wallet
-    * [Clearent.Models/CreditCard.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/CreditCard.cs)
+    * [CreditCard class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent.Models/CreditCard.cs)
         * Resolves to the current credit card
-    * [Clearent/SimpleInterestCalculator.cs](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
+    * [SimpleInterestCalculator class](https://github.com/JoelSkimoreMartin/Clearent/blob/master/Clearent/SimpleInterestCalculator.cs)
         * Use of ICardResolver shows how the different POCO classes can be evaluated interchangeably in order to calculate the simple interest rate, depending on the scope supplied
 
 
